@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM Kampus</title>
+    <link rel="stylesheet" href="struktur.css" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">BEM<span>Kampus</span></a>
+
+      <div class="navbar-nav">
+        <a href="utama.html#home">Beranda</a>
+        <a href="utama.html#about">Tentang Kami</a>
+        <a href="utama.html#structure">Struktur Organisasi</a>
+        <a href="utama.html#programs">Program dan Kegiatan</a>
+        <a href="utama.html#publications">Publikasi</a>
+        <a href="utama.html#services">Layanan Mahasiswa</a>
+        <a href="utama.html#contact">Kontak</a>
+      </div>
+
+      <!-- Menu Icon -->
+      <div class="menu-icon" id="menu-icon">
+        <!-- Example Feather Icon for menu -->
+        <i data-feather="menu"></i>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown-menu" id="dropdown-menu">
+        <a href="utama.html#home">Beranda</a>
+        <a href="utama.html#about">Tentang Kami</a>
+        <a href="utama.html#structure">Struktur Organisasi</a>
+        <a href="utama.html#programs">Program dan Kegiatan</a>
+        <a href="utama.html#publications">Publikasi</a>
+        <a href="utama.html#services">Layanan Mahasiswa</a>
+        <a href="utama.html#contact">Kontak</a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <section id="structure" class="structure">
+      <div class="container">
+        <h2>Struktur Organisasi</h2>
+        <div class="team">
+          <div class="member top">
+            <img src="img/user.png" />
+            <h3>Ketua BEM</h3>
+            <p>Nama Ketua</p>
+          </div>
+          <div class="sub-team second-row">
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Wakil Ketua BEM</h3>
+              <p>Nama Wakil Ketua</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Sekretaris</h3>
+              <p>Nama Sekretaris</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Bendahara</h3>
+              <p>Nama Bendahara</p>
+            </div>
+          </div>
+          <div class="sub-team">
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Humas & TI</h3>
+              <p>Nama Member</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Advokasi</h3>
+              <p>Nama Member</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Pengembangan</h3>
+              <p>Nama Member</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. PSDM</h3>
+              <p>Nama Member</p>
+            </div>
+          </div>
+          <div class="sub-team">
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Minat & Bakat</h3>
+              <p>Nama Member</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Kajian Strategis</h3>
+              <p>Nama Member</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Kewirausahaan</h3>
+              <p>Nama Member</p>
+            </div>
+            <div class="member">
+              <img src="img/user.png" />
+              <h3>Dept. Pengabdian Masyarakat</h3>
+              <p>Nama Member</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan Mahasiswa -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Layanan Mahasiswa</h2>
+        <p>
+          Kami menyediakan berbagai layanan untuk mendukung mahasiswa, termasuk
+          bantuan dan konsultasi.
+        </p>
+        <form id="contactForm">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah form dikirim secara default
+          alert("Berhasil terkirim!"); // Menampilkan kotak dialog
+          this.reset(); // Menghapus isian formulir
+        });
+    </script>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Untuk informasi lebih lanjut, silakan hubungi kami melalui:</p>
+        <ul>
+          <li>Email: bem@kampus.ac.id</li>
+          <li>Telepon: 123-456-7890</li>
+          <li>Alamat: Jl. Pendidikan No.1, Kampus, Indonesia</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- #Footer start -->
+<footer>
+
+  <div class="socials">
+      <a href="link instagram"><i data-feather="instagram"></i></a>
+      <a href="link twitter"><i data-feather="twitter"></i></a>
+      <a href="link facebook"><i data-feather="facebook"></i></a>
+  </div>
+
+  <div class="links">
+    <a href="utama.html#home">Beranda</a>
+        <a href="utama.html#about">Tentang Kami</a>
+        <a href="utama.html#structure">Struktur Organisasi</a>
+        <a href="utama.html#programs">Program dan Kegiatan</a>
+        <a href="utama.html#publications">Publikasi</a>
+        <a href="utama.html#services">Layanan Mahasiswa</a>
+        <a href="utama.html#contact">Kontak</a>
+      </div>
+
+  <div class="credit">
+    <p>&copy; 2024 BEM Kampus. All rights reserved.</p>
+  </div>
+</footer>
+<!-- #Footer end -->
+    
+    <script src="script.js"></script>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

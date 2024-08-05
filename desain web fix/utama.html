@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM Kampus</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">BEM<span>Kampus</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#structure">Struktur Organisasi</a>
+        <a href="#programs">Program dan Kegiatan</a>
+        <a href="#publications">Publikasi</a>
+        <a href="#services">Layanan Mahasiswa</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <!-- Menu Icon -->
+      <div class="menu-icon" id="menu-icon">
+        <!-- Example Feather Icon for menu -->
+        <i data-feather="menu"></i>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <div class="dropdown-menu" id="dropdown-menu">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#structure">Struktur Organisasi</a>
+        <a href="#programs">Program dan Kegiatan</a>
+        <a href="#publications">Publikasi</a>
+        <a href="#services">Layanan Mahasiswa</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <header>
+      <section id="home" class="home">
+        <div class="carousel">
+          <div
+            class="carousel-item"
+            style="background-image: url('img/beranda1.png')"
+          ></div>
+          <div
+            class="carousel-item"
+            style="background-image: url('img/beranda1.jpg')"
+          ></div>
+          <div
+            class="carousel-item"
+            style="background-image: url('img/beranda2.jpg')"
+          ></div>
+        </div>
+        <div class="overlay">
+          <div class="welcome-message">
+            <h1 class="red-text">Selamat Datang</h1>
+            <h2 class="white-text">
+              Badan Eksekutif Mahasiswa ITBA DCC Kampus Kab. Lampung Utara
+            </h2>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section id="about" class="about">
+      <div class="about">
+        <div class="shapes">
+          <!-- Medium Cube -->
+          <div
+            class="shape cube fade-in-up"
+            style="width: 100px; height: 100px"
+          >
+            <div class="front" style="width: 100px; height: 100px"></div>
+            <div class="back" style="width: 100px; height: 100px"></div>
+            <div class="left" style="width: 100px; height: 100px"></div>
+            <div class="right" style="width: 100px; height: 100px"></div>
+            <div class="top" style="width: 100px; height: 100px"></div>
+            <div class="bottom" style="width: 100px; height: 100px"></div>
+          </div>
+          <!-- Small Cube -->
+          <div class="shape cube fade-in-up" style="width: 50px; height: 50px">
+            <div class="front" style="width: 50px; height: 50px"></div>
+            <div class="back" style="width: 50px; height: 50px"></div>
+            <div class="left" style="width: 50px; height: 50px"></div>
+            <div class="right" style="width: 50px; height: 50px"></div>
+            <div class="top" style="width: 50px; height: 50px"></div>
+            <div class="bottom" style="width: 50px; height: 50px"></div>
+          </div>
+          <!-- Cone -->
+          <div
+            class="shape cone fade-in-up"
+            style="width: 150px; height: 150px"
+          >
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+          <!-- Add more shapes as needed -->
+        </div>
+        <div class="container">
+          <div class="about-info fade-in-up">
+            <h2>Tentang Kami</h2>
+            <p>
+              BEM Kampus adalah organisasi mahasiswa yang berfungsi sebagai
+              perwakilan mahasiswa dalam berbagai aspek kehidupan kampus. Kami
+              berkomitmen untuk meningkatkan kesejahteraan mahasiswa dan
+              memajukan kampus.
+            </p>
+          </div>
+          <div class="card-container">
+            <div
+              class="shape cube fade-in-up"
+              style="top: -20px; left: -20px; width: 100px; height: 100px"
+            >
+              <div class="front" style="width: 100px; height: 100px"></div>
+              <div class="back" style="width: 100px; height: 100px"></div>
+              <div class="left" style="width: 100px; height: 100px"></div>
+              <div class="right" style="width: 100px; height: 100px"></div>
+              <div class="top" style="width: 100px; height: 100px"></div>
+              <div class="bottom" style="width: 100px; height: 100px"></div>
+            </div>
+            <div class="card card-visi fade-in-up">
+              <h3>Visi</h3>
+              <p>
+                Visi kami adalah menciptakan kampus yang inklusif dan inovatif.
+              </p>
+            </div>
+            <div
+              class="shape cube fade-in-up"
+              style="top: -20px; left: -20px; width: 100px; height: 100px"
+            >
+              <div class="front" style="width: 100px; height: 100px"></div>
+              <div class="back" style="width: 100px; height: 100px"></div>
+              <div class="left" style="width: 100px; height: 100px"></div>
+              <div class="right" style="width: 100px; height: 100px"></div>
+              <div class="top" style="width: 100px; height: 100px"></div>
+              <div class="bottom" style="width: 100px; height: 100px"></div>
+            </div>
+            <div class="card card-misi fade-in-up">
+              <h3>Misi</h3>
+              <p>
+                Misi kami meliputi meningkatkan partisipasi mahasiswa,
+                memperkuat kerjasama, dan mendukung perkembangan akademik dan
+                non-akademik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="structure" class="structure">
+      <div class="container">
+        <h2>Struktur Organisasi</h2>
+        <div class="team">
+          <div class="member">
+            <img src="img/ketua.jpg" />
+            <h3>Ketua BEM</h3>
+            <p>Nama Ketua</p>
+          </div>
+          <div class="member">
+            <img src="img/wakil.jpg" />
+            <h3>Wakil Ketua BEM</h3>
+            <p>Nama Wakil Ketua</p>
+          </div>
+        </div>
+        <a href="structure.html" class="selengkapnya-btn">Selengkapnya</a>
+      </div>
+    </section>
+
+    <!-- Program dan Kegiatan -->
+    <section id="programs">
+      <div class="container1">
+        <h1>Program dan Kegiatan BEM</h1>
+        <div class="calendar-wrapper">
+          <div class="calendar">
+            <div class="month">
+              <div class="month-header">
+                <span>Agustus 2024</span>
+              </div>
+              <div class="weekdays">
+                <div>Ming</div>
+                <div>Sen</div>
+                <div>Sel</div>
+                <div>Rab</div>
+                <div>Kam</div>
+                <div>Jum</div>
+                <div>Sab</div>
+              </div>
+              <div class="days">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div class="event-day">15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div class="event-day">30</div>
+                <div>31</div>
+              </div>
+            </div>
+          </div>
+          <div class="event-details">
+            <div class="event-card">
+              <h2 class="event-title">Judul Kegiatan 1</h2>
+              <p class="event-date">15 Agustus 2024</p>
+              <p class="event-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+                expedita dolores fugiat voluptatum, aspernatur voluptas cumque
+                officiis in rem id!
+              </p>
+            </div>
+            <div class="event-card">
+              <h2 class="event-title">Judul Kegiatan 2</h2>
+              <p class="event-date">30 Agustus 2024</p>
+              <p class="event-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit magni amet est minus nulla ipsa quibusdam qui saepe
+                molestiae reiciendis?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publikasi -->
+    <section id="publications">
+      <div class="container2">
+        <h2>Publikasi</h2>
+        <div class="card-wrapper">
+          <div class="article-card">
+            <div
+              class="card-image"
+              style="background-image: url('img/beranda1.jpg')"
+            ></div>
+            <div class="card-content">
+              <h3 class="card-title">Artikel 1</h3>
+              <p class="card-author">by Author Name 1</p>
+              <p class="card-date">Published on: July 31, 2024</p>
+              <p class="card-excerpt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                iusto natus voluptatibus distinctio, et ut officia accusamus
+                odit, blanditiis quod temporibus nihil magnam suscipit
+                consectetur!
+              </p>
+              <a href="artikel_satu.html" class="read-more-button"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+          <div class="article-card">
+            <div
+              class="card-image"
+              style="background-image: url('img/beranda2.jpg')"
+            ></div>
+            <div class="card-content">
+              <h3 class="card-title">Artikel 2</h3>
+              <p class="card-author">by Author Name 2</p>
+              <p class="card-date">Published on: July 31, 2024</p>
+              <p class="card-excerpt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                aliquid fuga quod itaque ipsa et at obcaecati animi, sapiente,
+                dignissimos quam similique architecto quibusdam modi!
+              </p>
+              <a href="artikel_dua.html" class="read-more-button"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+          <div class="article-card">
+            <div
+              class="card-image"
+              style="background-image: url('img/beranda1.jpg')"
+            ></div>
+            <div class="card-content">
+              <h3 class="card-title">Artikel 3</h3>
+              <p class="card-author">by Author Name 3</p>
+              <p class="card-date">Published on: July 31, 2024</p>
+              <p class="card-excerpt">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorem, maxime deleniti labore ipsam commodi temporibus minima!
+                Voluptatem quasi assumenda, deleniti mollitia recusandae
+                praesentium asperiores eum.
+              </p>
+              <a href="artikel_tiga.html" class="read-more-button"
+                >Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="artikel.html"
+          ><button class="button">
+            Artikel Lainnya
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg></button
+        ></a>
+      </div>
+    </section>
+
+    <!-- Layanan Mahasiswa -->
+    <section id="services" class="services">
+      <div class="container3">
+        <h2>Layanan Mahasiswa</h2>
+        <p>
+          Kami menyediakan berbagai layanan untuk mendukung mahasiswa, termasuk
+          bantuan dan konsultasi.
+        </p>
+        <form id="contactForm">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah form dikirim secara default
+          alert("Berhasil terkirim!"); // Menampilkan kotak dialog
+          this.reset(); // Menghapus isian formulir
+        });
+    </script>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Untuk informasi lebih lanjut, silakan hubungi kami melalui:</p>
+        <ul>
+          <li>Email: bem@kampus.ac.id</li>
+          <li>Telepon: 123-456-7890</li>
+          <li>Alamat: Jl. Pendidikan No.1, Kampus, Indonesia</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- #Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="link instagram"><i data-feather="instagram"></i></a>
+        <a href="link twitter"><i data-feather="twitter"></i></a>
+        <a href="link facebook"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#structure">Struktur Organisasi</a>
+        <a href="#programs">Program dan Kegiatan</a>
+        <a href="#publications">Publikasi</a>
+        <a href="#services">Layanan Mahasiswa</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>&copy; 2024 BEM Kampus. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- #Footer end -->
+
+    <script src="java.js"></script>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
